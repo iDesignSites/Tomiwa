@@ -1,0 +1,434 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    height: 600px;
+    background-image: url("package-1511683_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.logo{
+    margin-left: 40px;
+    color: white;
+    animation-name: dusk;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dusk{
+    0% {color: white;}
+    25% {color: green;}
+}
+.nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+    position: fixed;
+    margin-left:-12px;
+}
+.active{
+    background-color: rgb(77, 123, 77);
+    height: 80px;
+    .link{
+        color: white;
+    }
+    .link:hover{
+        background-color: white;
+        color: rgb(77, 123, 77);
+    }
+    .logo{
+        color: white;
+    }
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-right: 200px;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+li a:hover{
+    background-color: rgb(77, 123, 77);
+    padding: 10px;
+    transition: 0.5s;
+}
+.side_nav{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 0px;
+    height: 300px;
+    background-color: azure;
+    transition: .5s ease all;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+.side_nav li{
+    margin: 10px;
+}
+.deliver{
+    height: 400px;
+}
+.container{
+    width: 700px;
+    height: 300px;
+    box-shadow: 5px 10px 10px 15px white;
+}
+.container2{
+    height: 700px;
+    background-color: white;
+}
+.image{
+    height: 200px;
+    width: 400px;
+    background-image: url("delivery.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 5px 10px 10px 15px rgb(242, 236, 236);
+}
+.cont{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.fast{  
+    background-image: url("delivery image 3.jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.purchase{
+    background-image: url("delivery image 2.jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.www{
+    background-image: url("delivery image 1.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.package{
+    height: 700px;
+    background-color: white;
+}
+.package .column{
+    box-shadow: 8px 8px 8px rgb(209, 198, 198);
+    border: none;
+    height: 500px;
+    border: 0.5px solid black;
+}
+.row{
+    gap: 30px;
+}
+.service{
+    height: 500px;
+}
+.continue{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    height: 600px;
+    background-color: whitesmoke;
+}
+.picture{
+    height: 400px;
+    background-image: url(about_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 10px;
+    box-shadow: 8px 8px 8px rgb(209, 198, 198);
+    border: none;
+}
+.text{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    height: 600px;
+}
+.contact2{
+    height: 500px;
+}
+.form{
+    height: 400px;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border: 2px ridge rgb(77, 123, 77);
+    border-radius: 3px;
+}
+textarea{
+    width: 200px;
+    height: 60px;
+    border: 2px ridge rgb(77, 123, 77);
+    border-radius: 3px;
+}
+.footer{
+    height: 420px;
+    background-color: rgb(77, 123, 77);
+    /* margin-left: -12px; */
+}
+.footer1{
+    height: 300px;
+    margin-right: 10px;
+}
+.link2{
+    text-decoration: none;
+    color: white;
+}
+.socials{
+    color: black;   
+}
+.menu_icon{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:663px) {
+    .header{
+        height: 300px;
+        background-image: url("package-1511683_1280.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+    .logo{
+        margin-left: 40px;
+        color: white;
+    }
+ 
+    nav{
+        padding: 3px;
+    }
+    ul{
+        display: none;
+    }
+    .menu_icon{
+        display: block;
+        padding: 10px;
+        color: green;
+        font-size: 30px;
+    }
+    .close{
+        padding: 10px;
+        color: green;
+        cursor: pointer;
+    }
+    li{
+        list-style: none;
+    }
+    li a{
+        text-decoration: none;
+        color: green;
+    }
+    .deliver{
+        margin-top: -80px;
+        height: 100px;
+    }
+    .media{
+        font-size: 20px;
+    }
+    .mountain{
+        font-size: 10px;
+    }
+    .button{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .container{
+        width: 300px;
+        height: 200px;
+        box-shadow: 5px 10px 10px 15px white;
+    }
+    .seperation{
+        display: grid;
+        gap: 100px;
+    }
+    .medium{
+        font-size: 10px;
+    }
+    .container2{
+        display: none;
+    }
+    .image{
+        height: 200px;
+        background-image: url("african-lion-2888519_1280.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        box-shadow: 5px 10px 10px 15px rgb(242, 236, 236);
+    }
+    .proof{
+        font-size: 20px;
+    }
+    .proof1{
+        font-size: 15px;
+    }
+    .cont{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: -100px;
+        gap: 100px;
+    }
+    .fast{
+        background-image: url("delivery image 3.jpg");
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    .purchase{
+        background-image: url("delivery image 2.jpg");
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    .www{
+        background-image: url("delivery image 1.png");
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+    .package{
+        height: 535px;
+        background-color: white;
+    }
+    .package .column{
+        box-shadow: 8px 8px 8px rgb(209, 198, 198);
+        border: none;
+        height: 200px;
+        border: 0.5px solid black;
+    }
+    .ideal{
+        font-size: 20px;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .dollar{
+        font-size: 15px;
+    }
+    .premium{
+        font-size: 10px;
+    }
+    .faraway{
+        font-size: 15px;
+    }
+
+    .service{
+        height: 500px;
+    }
+    .continue{
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about{
+        height: 350px;
+        background-color: whitesmoke;
+    }
+    .textabout{
+        font-size: 20px;
+    }
+    .abouttext{
+        font-size: 20px;
+    }
+    .picture{
+        height: 200px;
+        background-image: url(person_4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        margin-left: 10px;
+        box-shadow: 8px 8px 8px rgb(209, 198, 198);
+        border: none;
+    }
+    .text{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        height: 420px;
+        width: 450px;
+        margin-left: -5px;
+    }
+    .contact2{
+        height: 360px;
+        width: 200px;
+    }
+    .form{
+        height: 150px;
+    }
+    input{
+        width: 150px;
+        height: 20px;
+        border: 2px ridge rgb(77, 123, 77);
+        border-radius: 3px;
+    }
+    textarea{
+        width: 150px;
+        height: 30px;
+        border: 2px ridge rgb(77, 123, 77);
+        border-radius: 3px;
+    }
+    .first{
+        font-size: 10px;
+    }
+    .button2{
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .address{
+        font-size: 20px;
+    }
+    .service2{
+        font-size: 20px;
+    }
+    .continue{
+        gap: 20px;
+    }
+    .continue2{
+        font-size: 12px;
+    }
+    .footer1{
+        height: 300px;
+        margin-right: 10px;
+    }
+    .link2{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .footercont{
+        font-size: 10px;
+    }
+    .socials{
+        color: black;
+    }
+    .copy{
+        font-size: 10px;
+    }
+}
